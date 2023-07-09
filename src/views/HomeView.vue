@@ -70,9 +70,9 @@
         </div>
       </div>
 
-      <div class="  md:flex justify-center gap-10" >
+      <div class=" mx-3 md:flex justify-center gap-10" >
         <RouterLink to="/klinika">
-          <div class="hover:scale-110 w-96 my-10 mx-auto">
+          <div class="hover:scale-110 w-full md:w-96   my-10 md:mx-auto">
             <div
               class=" rounded-lg shadow-lg  shadow-neutral-400 bg-slate-50 border  "
             >
@@ -91,7 +91,7 @@
           </div></RouterLink
         >
         <RouterLink to="/dorixona">
-          <div class="hover:scale-110 w-96 my-10 mx-auto">
+          <div class="hover:scale-110 w-full md:w-96  my-10 md:mx-auto">
             <div
               class=" rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
             >
