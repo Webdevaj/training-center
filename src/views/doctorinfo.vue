@@ -6,55 +6,158 @@
           class="flex flex-1 items-center m-1 sm:items-stretch sm:justify-start"
         >
           <div class="flex flex-shrink-0 items-center">
-            <h1 class="text-2xl text-white ml-2">Doctor</h1>
+            <RouterLink to="/doctorlar"
+              ><h1 class="text-2xl text-white ml-2">Doctor</h1></RouterLink
+            >
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div
-    class="border mt-10 shadow shadow-gray-700 bg-slate-50 rounded-2xl w-auto lg:max-w-xl mx-auto h-auto bg-"
-  >
-    <div class="m-4">
-      <div class="flex justify-center gap-4">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-          class="h-20 w-auto"
-        />
-        <div>
-          <h1 class="mt-1 text-xl font-bold text-center text-black">
-            Anvar Temurov
-          </h1>
-          <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-            export doctor
-          </p>
+        <div
+          class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 gap-2 sm:pr-0"
+        >
+          <button class="text-white text-xl hidden md:block">
+            Sizning Id:U29945
+          </button>
+          <button
+            type="button"
+            class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+          >
+            <span class="sr-only">View notifications</span>
+            <BellIcon class="h-6 w-6" aria-hidden="true" />
+          </button>
+
+          <!-- Profile dropdown -->
+          <Menu as="div" class="relative ml-3">
+            <div>
+              <Button
+                @click="show = !show"
+                class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              >
+                <img
+                  class="h-8 w-8 rounded-full"
+                  src="https://media.licdn.com/dms/image/C4D03AQGMYolnVBZ-mw/profile-displayphoto-shrink_800_800/0/1598350333095?e=2147483647&v=beta&t=S57iTYTDpNztpZhEtZ66cs22OsLQSuoK7gkGwGZZ7t4"
+                  alt=""
+                />
+              </Button>
+            </div>
+            <transition
+              enter-active-class="transition ease-out duration-100"
+              enter-from-class="transform opacity-0 scale-95"
+              enter-to-class="transform opacity-100 scale-100"
+              leave-active-class="transition ease-in duration-75"
+              leave-from-class="transform opacity-100 scale-100"
+              leave-to-class="transform opacity-0 scale-95"
+            >
+              <MenuItems
+                v-if="show"
+                class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+              >
+                <div class="bg-gray-400 flex justify-center items-center">
+                  <a href="#" class="block px-4 py-2 text-sm"> ID:U29945</a>
+                  <span> 0 so'm</span>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700"
+                  >
+                    sizning profel</a
+                  >
+                </div>
+                <div>
+                  <a
+                    class="hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700"
+                    >Settings</a
+                  >
+                </div>
+                <div>
+                  <a
+                    class="hover:bg-red-700 hover:text-white block px-4 py-2 text-sm text-gray-700"
+                    >Sign out</a
+                  >
+                </div>
+              </MenuItems>
+            </transition>
+          </Menu>
         </div>
       </div>
     </div>
   </div>
 
   <div
-    class="border mt-10 shadow shadow-gray-700 bg-slate-50 rounded-2xl  lg:max-w-6xl mx-auto h-auto bg-"
+    class="flex min-h-full items-stretch justify-center text-center md:items-center md:px-2 lg:px-4"
   >
-    <h1 class=" flex gap-3 items-center mx-auto">
-      Phone number :
-      <button class="text-cyan-900">
-        +998907775566
-       
-      </button><svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class=" h-9 w-9  mr-1"
+    <div>
+      <div
+        class="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl"
+      >
+        <div
+          class="relative flex w-full items-center overflow-hidden bg-white px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-          />
-        </svg>
-    </h1>
+          <div
+            class="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-12 lg:gap-x-8"
+          >
+            <div
+              class="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:col-span-4 lg:col-span-5"
+            >
+              <img
+                src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=1200:*"
+                alt="product.imageAlt"
+                class="w-full border rounded-xl h-60"
+              />
+            </div>
+            <div class="sm:col-span-8 lg:col-span-7">
+              <h2 class="text-2xl font-bold text-gray-900 sm:pr-12">
+                Alisher Norboyev
+              </h2>
+              <p>Doctor dentist</p>
+
+              <p class="text-2xl text-gray-900">500$</p>
+
+              <div class="mt-6">
+                <p class="text-gray-900">about:</p>
+                <div class="flex">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo veniam voluptas excepturi assumenda laboriosam
+                    molestiae.
+                  </p>
+                </div>
+                <div class="p-4">
+                  <Calendar  :year="2023" month="July"></Calendar>
+                </div>
+              </div>
+
+              <form>
+               
+
+                <RouterLink to="/login"
+                  ><button
+                    type="submit"
+                    class="mt-6 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  >
+                    Band qilish
+                  </button></RouterLink
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+<script setup>
+import { ref } from "vue";
+import Calendar from "../components/icons/Calendar.vue";
+
+import XMarkIcon from "../components/icons/XMarkIcon.vue";
+const show = ref(false);
+function myFunction() {
+  console.log("The function is executed.");
+
+  return {
+    show,
+    myFunction,
+  };
+}
+</script>

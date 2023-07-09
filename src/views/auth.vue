@@ -1,5 +1,5 @@
 <template>
-  <div class="py-9 bg-teal-700 flex items-center justify-center">
+  <div class="py-9 bg-gray-800 flex items-center justify-center">
     <RouterLink class="absolute left-11" to="/">
       <homeicon class="w-11 h-11 text-white"></homeicon>
     </RouterLink>

@@ -9,7 +9,7 @@ import auth from "../views/auth.vue";
 import doctorauth from "../views/doctorauth.vue";
 import doctorlogin from "../views/doctorlogin.vue";
 import doctorinfo from "../views/doctorinfo.vue";
-import speciality from "../views/speciality.vue";
+import doctorlar from "../views/doctorlar.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -30,14 +30,29 @@ const router = createRouter({
     },
 
     {
-      path: "/speciality",
-      name: "speciality",
-      component: () => import("../views/speciality.vue"),
+      path: "/doctorlar",
+      name: "doctorlar",
+      component: () => import("../views/doctorlar.vue"),
     },
     {
       path: "/doctorinfo",
       name: "doctorinfo",
       component: () => import("../views/doctorinfo.vue"),
+    },
+    {
+      path: "/doriinfo",
+      name: "doriinfo",
+      component: () => import("../views/doriinfo.vue"),
+    },
+    {
+      path: "/doriadd",
+      name: "doriadd",
+      component: () => import("../views/doriadd.vue"),
+    },
+    {
+      path: "/dorixonaadd",
+      name: "dorixonaadd",
+      component: () => import("../views/dorixonaadd.vue"),
     },
     {
       path: "/shahsiydorixona",

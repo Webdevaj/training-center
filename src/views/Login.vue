@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="bg-teal-700 flex justify-center items-center gap-4 text-black font-bold py-9"
+    class="bg-gray-800 flex justify-center items-center gap-4 text-black font-bold py-9"
   >
     <RouterLink class="absolute left-11" to="/">
       <homeicon class="w-10 h-10 text-white"></homeicon>
@@ -37,8 +37,8 @@
           </label>
           <div class="mt-2">
             <input
-              id="tel"
-              name="tel"
+              id="email"
+              name="email"
               type="email"
               autocomplete="tel"
               class="block w-full rounded-md border-0 py-1.5 outline-blue-600 shadow-sm ring-1 ring-inset focus:ring-2 focus:ring-inset focus:ring-indigo-700 sm:text-sm sm:leading-6"
@@ -68,7 +68,7 @@
         <div>
           <button
             type="submit"
-            class="flex w-full justify-center rounded-md bg-green-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            class="flex w-full justify-center rounded-md bg-indigo-700 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
           >
             Kirish
           </button>

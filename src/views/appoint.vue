@@ -123,7 +123,7 @@
           </h1>
           <p class="text-center">
             mutahasis tanlang
-           <RouterLink to="/speciality"><button class="text-sky-700 text-lg">kirish --></button></RouterLink> 
+           <RouterLink to="/shahsiyklinika"><button class="text-sky-700 text-lg">kirish --></button></RouterLink> 
           </p>
         </div>
       </div>

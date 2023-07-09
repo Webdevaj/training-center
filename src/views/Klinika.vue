@@ -119,7 +119,7 @@
       <h2 class="sr-only">Products</h2>
 
       <div
-        class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
+        class="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
       >
         <RouterLink to="/shahsiyklinika">
           <div class="hover:scale-110">
@@ -136,9 +136,7 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Akfa med
               </h1>
-              <p class="text-lg mx-4 text-teal-700 text-center mb-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
+              
             </div>
           </div></RouterLink
         >
@@ -157,9 +155,7 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Akfa med
               </h1>
-              <p class="text-lg mx-4 text-teal-700 text-center mb-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
+              
             </div>
           </div></RouterLink
         >
@@ -178,9 +174,7 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Akfa med
               </h1>
-              <p class="text-lg mx-4 text-teal-700 text-center mb-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
+             
             </div>
           </div>
         </RouterLink>
@@ -199,9 +193,7 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Akfa med
               </h1>
-              <p class="text-lg mx-4 text-teal-700 text-center mb-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
+          
             </div>
           </div>
         </RouterLink>
@@ -220,9 +212,7 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Akfa med
               </h1>
-              <p class="text-lg mx-4 text-teal-700 text-center mb-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
+              
             </div>
           </div>
         </RouterLink>
@@ -242,9 +232,7 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Prof med
               </h1>
-              <p class="text-lg mx-4 text-teal-700 text-center mb-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
+             
             </div>
           </div>
         </RouterLink>
@@ -263,9 +251,7 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Akfa med
               </h1>
-              <p class="text-lg mx-4 text-teal-700 text-center mb-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
+              
             </div>
           </div>
         </RouterLink>
@@ -284,9 +270,7 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Akfa med
               </h1>
-              <p class="text-lg mx-4 text-teal-700 text-center mb-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
+             
             </div>
           </div>
         </RouterLink>

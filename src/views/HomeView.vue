@@ -15,9 +15,9 @@
           </a>
         </div>
 
-        <div class=" border  rounded-xl w-28 p-1 text-center bg-slate-100">
+        <div class=" border  rounded-xl w-28 p-1 text-center bg-gray-700 ">
           <RouterLink to="/login">
-            <a href="#" class="text-sm font-semibold  leading-6 text-gray-900"
+            <a href="#" class="text-sm font-semibold  leading-6 text-white"
               >Log in <span aria-hidden="true">&rarr;</span></a
             >
           </RouterLink>
@@ -70,47 +70,46 @@
         </div>
       </div>
 
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl py-8 sm:py-8 lg:max-w-none lg:py-9">
-          <div
-            class="mt-1 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0"
-          >
-            <div class="hover:opacity-70 hover:scale-110">
-              <p class="text-2xl font-semibold text-black mb-2 ml-5">
-                Klinikalar
-              </p>
-              <RouterLink to="/klinika">
+      <div class="  md:flex justify-center gap-10" >
+        <RouterLink to="/klinika">
+          <div class="hover:scale-110 w-96 my-10 mx-auto">
+            <div
+              class=" rounded-lg shadow-lg  shadow-neutral-400 bg-slate-50 border  "
+            >
+              <div class="flex justify-center">
                 <img
-                  src="https://www.klinika-promienista.com.pl/tmp/2012/03/cropped-Klinika-Promienista-1101.jpg"
-                  alt="callout.imageAlt"
-                  class="h-64 rounded-lg border border-gray-800 w-full"
-              /></RouterLink>
+                  src="https://www.klinikasoftware.it/media/qlkbofmo/klinika_magazzino.png"
+                  class="h-44 w-60 border-2 mt-3 border-gray-400 rounded-lg p-1"
+                  alt=""
+                />
+              </div>
+              <h1 class="mt-1 text-xl font-bold text-center text-black">
+                Klinikalr
+              </h1>
+              
             </div>
-            <div class="hover:opacity-70 hover:scale-110">
-              <p class="text-2xl font-semibold text-black mb-2 ml-5">
+          </div></RouterLink
+        >
+        <RouterLink to="/dorixona">
+          <div class="hover:scale-110 w-96 my-10 mx-auto">
+            <div
+              class=" rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
+            >
+              <div class="flex justify-center">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfXdOrLdSDtuHQKvSVHgY-dDna6086B0TokRqwy53stbN0vBQcuGXK0ibfqERJl6Pnls4&usqp=CAU"
+                  class="h-44 w-60 border-2 mt-3 border-gray-400 rounded-lg p-1"
+                  alt=""
+                />
+              </div>
+              <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Dorixonalar
-              </p>
-              <RouterLink to="/dorixona">
-                <img
-                  src="https://storage.kun.uz/source/1/XROTzwm_hz914PGNFtjI6yQiiwQ3wM8U.jpg"
-                  alt="callout.imageAlt"
-                  class="w-full h-64 border border-gray-800 rounded-lg"
-              /></RouterLink>
+              </h1>
+              
             </div>
-            <div class="hover:opacity-70 hover:scale-110">
-              <p class="text-2xl font-semibold text-black mb-2 ml-5">
-                Navbatlar
-              </p>
-              <RouterLink to=" /navba"
-                ><img
-                  src="https://www.gazeta.uz/media/img/2022/08/4WBSB416594491134469_b.jpg"
-                  alt="callout.imageAlt"
-                  class="h-64 rounded-lg border border-gray-800 w-full"
-              /></RouterLink>
-            </div>
-          </div>
+          </div></RouterLink
+        >
         </div>
-      </div>
 
       <div
         class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"

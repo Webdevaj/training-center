@@ -1,5 +1,5 @@
 <template>
-  <div as="nav" class="bg-gray-800 fixed top-0 w-full" v-if="{ open }">
+  <div as="nav" class="bg-gray-800 fixed z-50 top-0 w-full" v-if="{ open }">
     <div class="mx-auto  sm:px-6">
       <div class="relative flex h-16 items-center justify-between">
         <div
@@ -187,7 +187,7 @@
   </div>
 
   <div class="bg-white">
-    <div class="px-4 max-w-6xl mx-auto my-10">
+    <div class="px-4 max-w-6xl mx-auto my-20">
       <img
         class="mx-auto h-16 w-auto my-9"
         src="https://cdn-icons-png.flaticon.com/512/759/759232.png"
@@ -202,6 +202,7 @@
         />
       </div>
       <div class=" mt-10">
+        
         <swiper
           :autoplay="{
             delay: 3000,
@@ -210,7 +211,7 @@
           :loop="true"
           :modules="[Autoplay]"
         >
-          <swiper-slide class="">
+          <swiper-slide>
             <div class="  ">
               <img
                 src="https://c8y.doxcdn.com/image/upload/c_fill,fl_progressive,h_800,q_auto,w_1600/a1lqhdn2xeb4tsnztntz.webp"
@@ -250,448 +251,158 @@
             </h1>
             <p class="text-center">
               mutahasis tanlang
-              <RouterLink to="/speciality"
-                ><button class="text-sky-700 text-lg">kirish --></button>
-              </RouterLink>
-            </p>
+              </p>
           </div>
         </div>
 
-        <h1 class="text-2xl m-2">Mutaxasislik</h1>
-        <div
-          class="avazbek flex gap-4 overflow-x-auto bg-slate-100 p-4 border rounded-xl"
-        >
-          <button class="shrink-0 rounded-xl bg-white px-4 py-2 font-semibold">
-            🦷 Dentist
-          </button>
-          <button class="shrink-0 rounded-xl bg-white px-4 py-2 font-semibold">
-            🦷 Dentist
-          </button>
-          <button class="shrink-0 rounded-xl bg-white px-4 py-2 font-semibold">
-            🦷 Dentist
-          </button>
-          <button class="shrink-0 rounded-xl bg-white px-4 py-2 font-semibold">
-            🦷 Dentist
-          </button>
-          <button class="shrink-0 rounded-xl bg-white px-4 py-2 font-semibold">
-            🦷 Dentist
-          </button>
-          <button class="shrink-0 rounded-xl bg-white px-4 py-2 font-semibold">
-            🦷 Dentist
-          </button>
-          <button class="shrink-0 rounded-xl bg-white px-4 py-2 font-semibold">
-            🦷 Dentist
-          </button>
-          <button class="shrink-0 rounded-xl bg-white px-4 py-2 font-semibold">
-            🦷 Dentist
-          </button>
-          <button class="shrink-0 rounded-xl bg-white px-4 py-2 font-semibold">
-            🦷 Dentist
-          </button>
-          <button class="shrink-0 rounded-xl bg-white px-4 py-2 font-semibold">
-            🦷 Dentist
-          </button>
-          <button class="shrink-0 rounded-xl bg-white px-4 py-2 font-semibold">
-            🦷 Dentist
-          </button>
-        </div>
+        
       </div>
 
       <div class="mx-auto max-w-2xl py-3 sm:py-3 lg:max-w-none lg:py-4">
-        <div class="mx-auto max-w-2xl py-3 sm:py-3 lg:max-w-none lg:py-4">
-          <h1 class="text-2xl text-black m-5">Bizning doctorlar</h1>
+    <div class="mx-auto max-w-2xl py-3 sm:py-3 lg:max-w-none lg:py-4">
+      <h1 class="text-2xl text-black m-5">Mutahasislik</h1>
+      <div
+        class="grid grid-cols-2 gap-x-3 gap-y-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
+      >
+        <div class=" ">
           <div
-            class="grid grid-cols-2 gap-x-3 gap-y-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
+            class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
           >
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Anvar Temurov
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
+            <div class="flex justify-center">
+             <RouterLink to="/doctorlar"><img
+                src="https://cdn2.iconfinder.com/data/icons/teeth-and-dentist/100/_-3-512.png"
+                class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
+                alt=""
+              /></RouterLink> 
             </div>
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika juman
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
+            <h1 class="mt-1 text-xl mb-2 font-bold text-center text-black">
+              Dentist
+            </h1>
+           
+          </div>
+        </div>
+        <div class=" ">
+          <div
+            class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
+          >
+            <div class="flex justify-center">
+             <RouterLink to="/doctorlar"><img
+                src="https://dunyo.info/uploads/post/1611248710.6417.jpg"
+                class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
+                alt=""
+              /></RouterLink> 
             </div>
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
+            <h1 class="mt-1 text-xl mb-2 font-bold text-center text-black">
+              Kardiyalogiya
+            </h1>
+            
+          </div>
+        </div>
+        <div class=" ">
+          <div
+            class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
+          >
+            <div class="flex justify-center">
+             <RouterLink to="/doctorlar"><img
+                src="https://dunyo.info/uploads/post/1611248710.6417.jpg"
+                class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
+                alt=""
+              /></RouterLink> 
             </div>
-
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
+            <h1 class="mt-1 text-xl mb-2 font-bold text-center text-black">
+              Kardiyalogiya
+            </h1>
+            
+          </div>
+        </div>
+        <div class=" ">
+          <div
+            class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
+          >
+            <div class="flex justify-center">
+             <RouterLink to="/doctorlar"><img
+                src="https://w7.pngwing.com/pngs/621/257/png-transparent-obstetrics-and-gynaecology-obstetrics-and-gynaecology-clinic-hospital-obstetrics-s-purple-blue-text.png"
+                class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
+                alt=""
+              /></RouterLink> 
             </div>
-
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
+            <h1 class="mt-1 text-xl mb-2 font-bold text-center text-black">
+              genicolik
+            </h1>
+            
+          </div>
+        </div>
+        <div class=" ">
+          <div
+            class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
+          >
+            <div class="flex justify-center">
+              <RouterLink to="/doctorlar"> <img
+                src="https://www.shutterstock.com/image-vector/man-confused-about-pimples-on-260nw-1739212946.jpg"
+                class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
+                alt=""
+              /></RouterLink>
             </div>
-
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
+            <h1 class="mt-1 text-xl mb-2 font-bold text-center text-black">
+              Teri kasaligi
+            </h1>
+            
+          </div>
+        </div>
+        <div class=" ">
+          <div
+            class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
+          >
+            <div class="flex justify-center">
+              <RouterLink to="/doctorlar">   <img
+                src="https://cdn-icons-png.flaticon.com/512/4006/4006204.png"
+                class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
+                alt=""
+              /></RouterLink>
             </div>
-
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
+            <h1 class="mt-1 text-xl mb-2 font-bold text-center text-black">
+              Urologist
+            </h1>
+            
+          </div>
+        </div>
+        <div class=" ">
+          <div
+            class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
+          >
+            <div class="flex justify-center">
+              <RouterLink to="/doctorlar"> <img
+                src="https://w7.pngwing.com/pngs/244/518/png-transparent-eye-icon-eye-service-people-logo.png"
+                class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
+                alt=""
+              /></RouterLink>
             </div>
-
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
+            <h1 class="mt-1 text-xl mb-2 font-bold text-center text-black">
+              Ko'z parvarish
+            </h1>
+            
+          </div>
+        </div>
+        <div class=" ">
+          <div
+            class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
+          >
+            <div class="flex justify-center">
+              <RouterLink to="/doctorlar">  <img
+                src="https://cdn3.vectorstock.com/i/1000x1000/43/87/dermatology-icon-vector-38224387.jpg"
+                class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
+                alt=""
+              /></RouterLink>
             </div>
-
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
-            </div>
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
-            </div>
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
-            </div>
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
-            </div>
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
-            </div>
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
-            </div>
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
-            </div>
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
-            </div>
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
-            </div>
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
-            </div>
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
-            </div>
-            <div class=" ">
-              <div
-                class="h-auto rounded-lg shadow-lg shadow-neutral-400 bg-slate-50 border w-auto"
-              >
-                <div class="flex justify-center">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszZBtH1iTmf4l4fEISp0e7wGIot7fjCNu9w&usqp=CAU"
-                    class="h-44 w-auto border-2 mt-3 border-gray-400 rounded-lg p-1"
-                    alt=""
-                  />
-                </div>
-                <h1 class="mt-1 text-xl font-bold text-center text-black">
-                  Malika jumanova
-                </h1>
-                <p class="text-xl mx-4 text-teal-700 text-center mb-1">
-                  export doctor
-                </p>
-              </div>
-            </div>
+            <h1 class="mt-1 text-xl mb-2 font-bold text-center text-black">
+              Dermatalogiya
+            </h1>
+            
           </div>
         </div>
       </div>
+    </div>
+  </div>
     </div>
     <div class="my-9 shadow-lg shadow-slate-600">
       <iframe
