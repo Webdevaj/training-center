@@ -55,6 +55,11 @@ const router = createRouter({
       component: () => import("../views/dorixonaadd.vue"),
     },
     {
+      path: "/tick",
+      name: "tick",
+      component: () => import("../views/tick.vue"),
+    },
+    {
       path: "/shahsiydorixona",
       name: "shahsiydorixona",
       component: () => import("../views/shahsiydorixona.vue"),
