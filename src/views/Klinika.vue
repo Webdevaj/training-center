@@ -1,5 +1,6 @@
 <template>
-  <div as="nav" class="bg-gray-800" v-if="{ open }">
+<body>
+  <div as="nav" style="background-color:  rgb(43, 119, 43)">
     <div class="mx-auto sm:px-6">
       <div class="relative flex h-16 items-center justify-between">
         <div
@@ -97,7 +98,7 @@
     </div>
   </div>
 
-  <div class="bg-white">
+  <div>
     <div class="px-4 max-w-3xl mx-auto my-10">
       <img
         class="mx-auto h-16 w-auto my-9"
@@ -111,6 +112,44 @@
           v-model="input"
           placeholder="Klinikka izlash"
         />
+        <button
+          class="absolute right-9 flex items-center"
+          @click="showcenter = !showcenter"
+        >
+          Termez <location class="h-7 w-7 text-blue-600"></location>
+        </button>
+      </div>
+      <div
+        class="absolute ml-44 lg:right-96 z-10 mt-2 md:right-96  w-48 origin-top-right rounded-md bg-slate-100 shadow-2xl py-1 shadow-gray-700 ring-1 ring-black ring-opacity-5 focus:outline-none"
+        v-if="showcenter"
+      >
+        <p class="hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700">
+          Angor
+        </p>
+        <p class="hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700">
+          Sherabod
+        </p>
+        <p class="hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700">
+          Boysun
+        </p>
+        <p class="hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700">
+          Denov
+        </p>
+        <p class="hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700">
+          Qumqurg'on
+        </p>
+        <p class="hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700">
+          Bandixon
+        </p>
+        <p class="hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700">
+          Jarqo'rg'on
+        </p>
+        <p class="hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700">
+          OLtinsoy
+        </p>
+        <p class="hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700">
+          Uzun
+        </p>
       </div>
     </div>
     <div
@@ -136,7 +175,6 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Akfa med
               </h1>
-              
             </div>
           </div></RouterLink
         >
@@ -155,7 +193,6 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Akfa med
               </h1>
-              
             </div>
           </div></RouterLink
         >
@@ -174,7 +211,6 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Akfa med
               </h1>
-             
             </div>
           </div>
         </RouterLink>
@@ -193,7 +229,6 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Akfa med
               </h1>
-          
             </div>
           </div>
         </RouterLink>
@@ -212,7 +247,6 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Akfa med
               </h1>
-              
             </div>
           </div>
         </RouterLink>
@@ -232,7 +266,6 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Prof med
               </h1>
-             
             </div>
           </div>
         </RouterLink>
@@ -251,7 +284,6 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Akfa med
               </h1>
-              
             </div>
           </div>
         </RouterLink>
@@ -270,17 +302,18 @@
               <h1 class="mt-1 text-xl font-bold text-center text-black">
                 Akfa med
               </h1>
-             
             </div>
           </div>
         </RouterLink>
       </div>
     </div>
   </div>
+</body>
 </template>
 
 <script setup>
 import { ref } from "vue";
+import location from "../components/icons/location.vue";
 import Bars3Icon from "../components/icons/Bars3icon.vue";
 import BellIcon from "../components/icons/BellIcon.vue";
 import XMarkIcon from "../components/icons/XMarkIcon.vue";
@@ -292,12 +325,23 @@ const navigation = [
 ];
 
 const show = ref(false);
+const showcenter = ref(false);
 function myFunction() {
   console.log("The function is executed.");
 
   return {
     show,
+    showcenter,
     myFunction,
   };
 }
 </script>
+
+<style>
+body {
+  background-image: url("../assets/30.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+</style>

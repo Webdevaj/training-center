@@ -1,4 +1,5 @@
 <template>
+  <h1></h1>
   <nav
     class="bg-gray-800  gap-4 fixed top-0 text-white font-bold py-7"
   > <RouterLink to="/shahsiyklinika"><h1 class=" text-white text-2xl font-bold ml-3">Doctor Login</h1></RouterLink>

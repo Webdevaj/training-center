@@ -6,7 +6,7 @@
           class="flex flex-1 items-center m-1 sm:items-stretch sm:justify-start"
         >
           <div class="flex flex-shrink-0 items-center">
-            <RouterLink to="/shahsiydorixona"
+            <RouterLink to="/shahsiyklinika"
               ><h1 class="text-2xl text-white ml-2">Tabriklaymiz</h1></RouterLink
             >
           </div>
@@ -62,5 +62,5 @@
     </g>
 </svg>
 </div><div class="flex justify-center text-2xl font-bold">
-<p>Tabriklaymiz! Siz muvafaqiyattlinavbat oldingiz. </p></div>
+<p>Tabriklaymiz! Siz muvafaqiyattli navbat oldingiz. </p></div>
 </template>

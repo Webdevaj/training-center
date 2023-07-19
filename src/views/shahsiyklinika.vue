@@ -6,11 +6,12 @@
           class="flex flex-1 items-center m-1 sm:items-stretch sm:justify-start"
         >
           <div class="flex flex-shrink-0 items-center">
+            <RouterLink to="/klinika">
             <img
               class="h-12 w-12 rounded-full"
               src="https://clinics.uz/uzb/components/com_mtree/img/listings/m/2519.jpg"
               alt=""
-            />
+            /></RouterLink>
           </div>
           <div class="hidden sm:ml-6 sm:block my-auto">
             <div class="flex space-x-4 items-center">
