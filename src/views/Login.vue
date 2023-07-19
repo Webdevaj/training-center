@@ -1,7 +1,7 @@
 <template>
   <nav
-    class="bg-gray-800 flex justify-center items-center gap-4 text-black font-bold py-9"
-  >
+    class=" flex justify-center items-center gap-4 text-black font-bold py-9"
+    style="background-color: rgb(70, 162, 147)">
     <RouterLink class="absolute left-11" to="/">
       <homeicon class="w-10 h-10 text-white"></homeicon>
     </RouterLink> 

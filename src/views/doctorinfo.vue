@@ -1,5 +1,5 @@
 <template>
-  <div as="nav" class="bg-gray-800">
+  <div as="nav" class="" style="background-color: rgb(70, 162, 147)">
     <div class="mx-auto sm:px-6">
       <div class="relative flex h-16 items-center justify-between">
         <div
@@ -17,13 +17,7 @@
           <button class="text-white text-xl hidden md:block">
             Sizning Id:U29945
           </button>
-          <button
-            type="button"
-            class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-          >
-            <span class="sr-only">View notifications</span>
-            <BellIcon class="h-6 w-6" aria-hidden="true" />
-          </button>
+       
 
           <!-- Profile dropdown -->
           <Menu as="div" class="relative ml-3">
@@ -84,11 +78,11 @@
   </div>
 
   <div
-    class="flex min-h-full items-stretch justify-center text-center md:items-center md:px-2 lg:px-4"
+    class="flex min-h-full items-stretch justify-center text-center md:items-center md:px-2 lg:px-4 "
   >
     <div>
       <div
-        class="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl"
+        class="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl text-opacity-75"
       >
         <div
           class="relative flex w-full items-center overflow-hidden bg-white px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8"
@@ -97,7 +91,7 @@
             class="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-12 lg:gap-x-8"
           >
             <div
-              class="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:col-span-4 lg:col-span-5"
+              class="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg  bg-gray-100 sm:col-span-4 lg:col-span-5"
             >
               <img
                 src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=1200:*"
@@ -147,7 +141,7 @@
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
+import { ref } from "vue";  
 import Calendar from "../components/icons/Calendar.vue";
 
 import XMarkIcon from "../components/icons/XMarkIcon.vue";

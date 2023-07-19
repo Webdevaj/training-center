@@ -1,10 +1,6 @@
 import { createApp } from "vue";
 import { createPinia } from "pinia";
 
-import AOS from "aos";
-import "aos/dist/aos.css ";
-AOS.init();
-
 import App from "./App.vue";
 import "./assets/base.css";
 import router from "./router";

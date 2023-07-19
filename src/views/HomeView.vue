@@ -45,7 +45,7 @@
       </div>
       <div class="mx-auto max-w-2xl pb-3 sm:mt-24">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center"></div>
-        <div class="text-center">
+        <div class="text-center" data-aos="fade-down">
           <h1
             class="text-2 font-bold tracking-tight text-gray-900 sm:text-5xl mt-32"
           >
@@ -57,7 +57,7 @@
 
       <div class="mx-3 md:flex justify-center gap-10">
         <RouterLink to="/klinika">
-          <div class="hover:scale-105 w-full md:w-96 my-10 md:mx-auto">
+          <div class="hover:scale-105 w-full md:w-96 my-10 md:mx-auto" data-aos="fade-right">
             <div
               class="rounded-lg shadow-2xl shadow-gray-900  text-opacity-50 border"
             >
@@ -75,7 +75,7 @@
           </div></RouterLink
         >
         <RouterLink to="/dorixona">
-          <div class="hover:scale-105 w-full md:w-96 my-10 md:mx-auto" >
+          <div class="hover:scale-105 w-full md:w-96 my-10 md:mx-auto" data-aos="fade-left">
             <div
               class="rounded-lg shadow-2xl shadow-gray-900 text-opacity-50 border"
             >
@@ -93,6 +93,7 @@
           </div></RouterLink
         >
       </div>
+      
 
       <div
         class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
@@ -104,6 +105,10 @@
 
 <script setup>
 import { ref } from "vue";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 </script>
 
 <style>

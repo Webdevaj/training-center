@@ -1,5 +1,6 @@
 <template>
-   <nav class="bg-gray-800">
+  <body>
+   <nav class=""  style="background-color: rgb(70, 162, 147)">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -73,14 +74,14 @@
               <!-- Nav links -->
               <RouterLink to="/dorixonaadd"
                 ><a
-                  class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                  class="bg-teal-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >Dorixona qo'shish</a
                 ></RouterLink
               >
               <RouterLink to="/doriadd"
                 ><a
                   href="#"
-                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  class="text-gray-300 hover:bg-teal-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >Dori qo'shish</a
                 ></RouterLink
               >
@@ -107,7 +108,7 @@
       </div>
     </div>
   </nav>
-  <div class="bg-white">
+  <div class="">
     <div class="px-4 max-w-3xl mx-auto my-10">
       <img
         class="mx-auto h-16 w-auto my-9"
@@ -316,7 +317,7 @@
         </RouterLink>
       </div>
     </div>
-  </div>
+  </div></body>
 </template>
 
 <script setup>
@@ -339,3 +340,11 @@ function myFunction() {
   };
 }
 </script>
+<style>
+body {
+  background-image: url("../assets/1212.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+</style>

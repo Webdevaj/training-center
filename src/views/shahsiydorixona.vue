@@ -1,5 +1,5 @@
 <template>
-    <nav class="bg-gray-800">
+    <nav class=""  style="background-color: rgb(70, 162, 147)">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -73,14 +73,14 @@
               <!-- Nav links -->
               <RouterLink to="/dorixonaadd"
                 ><a
-                  class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                  class="bg-teal-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >Dorixona qo'shish</a
                 ></RouterLink
               >
               <RouterLink to="/doriadd"
                 ><a
                   href="#"
-                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  class=" text-white hover:bg-teal-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >Dori qo'shish</a
                 ></RouterLink
               >
@@ -95,21 +95,21 @@
       <div class="px-2 pt-2 pb-3 space-y-1">
      <RouterLink to="/dorixonaadd"><a
           href="#"
-          class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+          class=" text-white block px-3 py-2 rounded-md text-base font-medium" style="background-color: rgb(70, 162, 147)"
           >Dorixona qo'shish</a
         ></RouterLink>   
 
         <RouterLink to="/doriadd"><a
           href="#"
-          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+          class="text-white hover:bg-teal-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >Dori qo'shish</a
         ></RouterLink>
       </div>
     </div>
   </nav>
-  <div class="bg-white">
+  <div class="">
     <div class="p-8 text-gray-900 font-extrabold">
-        <div class="bg-white">
+        <div class="">
           <div class="px-4 max-w-3xl mx-auto my-10">
             <img
               class="mx-auto h-16 w-auto my-9"
@@ -125,7 +125,7 @@
               />
             </div>
           </div>
-          <div class="bg-white">
+          <div class="">
     <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
       <h2 class="text-2xl font-bold tracking-tight text-gray-900">Dori darmonlar</h2>
 

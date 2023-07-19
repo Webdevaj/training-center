@@ -1,7 +1,7 @@
 <template>
 <body>
-  <div as="nav" style="background-color:  rgb(43, 119, 43)">
-    <div class="mx-auto sm:px-6">
+  <div class="fixed z-50 top-0 w-full"  style="background-color: rgb(70, 162, 147)">
+    <div class="mx-auto sm:px-6 ">
       <div class="relative flex h-16 items-center justify-between">
         <div
           class="flex flex-1 items-center m-1 sm:items-stretch sm:justify-start"
@@ -32,13 +32,7 @@
           <button class="text-white text-xl hidden md:block">
             Sizning Id:U29945
           </button>
-          <button
-            type="button"
-            class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-          >
-            <span class="sr-only">View notifications</span>
-            <BellIcon class="h-6 w-6" aria-hidden="true" />
-          </button>
+        
 
           <!-- Profile dropdown -->
           <Menu as="div" class="relative ml-3">
@@ -99,7 +93,7 @@
   </div>
 
   <div>
-    <div class="px-4 max-w-3xl mx-auto my-10">
+    <div class="px-4 max-w-3xl mx-auto my-20">
       <img
         class="mx-auto h-16 w-auto my-9"
         src="https://cdn-icons-png.flaticon.com/512/759/759232.png"
@@ -315,7 +309,7 @@
 import { ref } from "vue";
 import location from "../components/icons/location.vue";
 import Bars3Icon from "../components/icons/Bars3icon.vue";
-import BellIcon from "../components/icons/BellIcon.vue";
+
 import XMarkIcon from "../components/icons/XMarkIcon.vue";
 
 const navigation = [
@@ -339,7 +333,7 @@ function myFunction() {
 
 <style>
 body {
-  background-image: url("../assets/30.jpg");
+  background-image: url("../assets/1212.jpeg");
   background-size: cover;
   background-position: center;
   height: 100%;

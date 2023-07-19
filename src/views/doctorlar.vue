@@ -1,5 +1,5 @@
 <template>
-  <div as="nav" class="bg-gray-800" v-if="{ open }">
+  <div as="nav" class=""  style="background-color: rgb(70, 162, 147)" >
     <div class="mx-auto sm:px-6">
       <div class="relative flex h-16 items-center justify-between">
         <div class="flex flex-1 items-center m-1 sm:items-stretch sm:justify-start">
@@ -15,12 +15,7 @@
           <button class="text-white text-xl hidden md:block">
             Sizning Id:U29945
           </button>
-          <button
-            type="button"
-            class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-            <span class="sr-only">View notifications</span>
-            <BellIcon class="h-6 w-6" aria-hidden="true" />
-          </button>
+          
 
           <!-- Profile dropdown -->
           <Menu as="div" class="relative ml-3">
@@ -240,7 +235,7 @@
 <script setup>
 import { ref } from "vue";
 import Bars3Icon from "../components/icons/Bars3icon.vue";
-import BellIcon from "../components/icons/BellIcon.vue";
+
 import XMarkIcon from "../components/icons/XMarkIcon.vue";
 
 const show = ref(false);

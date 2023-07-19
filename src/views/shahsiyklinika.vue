@@ -1,5 +1,5 @@
 <template>
-  <div as="nav" class="bg-gray-800 fixed z-50 top-0 w-full" v-if="{ open }">
+  <div as="nav" class=" fixed z-50 top-0 w-full" v-if="{ open }" style="background-color: rgb(70, 162, 147)" >
     <div class="mx-auto  sm:px-6">
       <div class="relative flex h-16 items-center justify-between">
         <div
@@ -49,13 +49,7 @@
           <button class="text-white text-xl hidden md:block">
             Sizning Id:U29945
           </button>
-          <button
-            type="button"
-            class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-          >
-            <span class="sr-only">View notifications</span>
-            <BellIcon class="h-6 w-6" aria-hidden="true" />
-          </button>
+          
 
           <!-- Profile dropdown -->
           <Menu as="div" class="relative ml-3">
@@ -187,7 +181,7 @@
     </ul>
   </div>
 
-  <div class="bg-white">
+  <div class="">
     <div class="px-4 max-w-6xl mx-auto my-20">
       <img
         class="mx-auto h-16 w-auto my-9"
@@ -421,7 +415,7 @@
 <script setup>
 import { ref } from "vue";
 import Bars3Icon from "../components/icons/Bars3icon.vue";
-import BellIcon from "../components/icons/BellIcon.vue";
+
 import XMarkIcon from "../components/icons/XMarkIcon.vue";
 
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -438,3 +432,11 @@ function myFunction() {
   };
 }
 </script>
+<style>
+body {
+  background-image: url("../assets/1212.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+</style>
