@@ -1,11 +1,11 @@
 <template>
-  <h1></h1>
+  
   <nav
-    class="bg-gray-800  gap-4 fixed top-0 text-white font-bold py-7"
+    class=" gap-4 fixed top-0 w-full text-white font-bold py-3" style="background-color: rgb(70, 162, 147)"
   > <RouterLink to="/shahsiyklinika"><h1 class=" text-white text-2xl font-bold ml-3">Doctor Login</h1></RouterLink>
 </nav>
   <div
-    class="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8"
+    class="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 mt-10"
   >
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
       <img

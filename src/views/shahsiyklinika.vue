@@ -18,7 +18,7 @@
               <div>
                 <RouterLink to="/shahsiyklinika">
                   <a
-                    class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium"
+                    class="text-white hover:bg-teal-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium"
                     >Home
                   </a></RouterLink
                 >
@@ -26,7 +26,7 @@
               <div>
                 <RouterLink to="/appoint">
                   <a
-                    class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium"
+                    class="text-white hover:bg-teal-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium"
                     >Uchrashuv
                   </a></RouterLink
                 >
@@ -34,7 +34,7 @@
               <div>
                 <RouterLink to="/doctorlogin"
                   ><a
-                    class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium"
+                    class="text-white hover:bg-teal-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium"
                   >
                     Doctor Login
                   </a></RouterLink
@@ -56,7 +56,7 @@
             <div>
               <Button
                 @click="show = !show"
-                class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                class="flex rounded-full bg-teal-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-teal-800"
               >
                 <img
                   class="h-8 w-8 rounded-full"

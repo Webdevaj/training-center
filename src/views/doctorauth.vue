@@ -1,6 +1,6 @@
 <template>
    <nav
-    class="bg-gray-800  gap-4 text-white font-bold py-7"
+    class="  gap-4 text-white font-bold py-3" style="background-color: rgb(70, 162, 147)"
   > <RouterLink to="/shahsiyklinika"><h1 class=" text-white text-2xl font-bold ml-3">Doctor Auth</h1></RouterLink>
 </nav>
   <div

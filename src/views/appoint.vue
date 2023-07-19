@@ -1,19 +1,20 @@
 <template>
-  <div as="nav" class="bg-gray-800" v-if="{ open }">
+  <div  class="" style="background-color: rgb(70, 162, 147)">
     <div class="mx-auto sm:px-6">
       <div class="relative flex h-16 items-center justify-between">
         <div
           class="flex flex-1 items-center m-1 sm:items-stretch sm:justify-start"
         >
           <div class="flex flex-shrink-0 items-center">
-            <h1 class="text-2xl text-white ml-2">Uchrashuvlar</h1>
+            <RouterLink to="/shahsiyklinika">
+            <h1 class="text-2xl text-white ml-2">Uchrashuvlar</h1></RouterLink>
           </div>
           <div class="hidden sm:ml-6 sm:block my-auto">
             <div class="flex space-x-4 items-center">
               <div>
                 <RouterLink to="/shahsiyklinika">
                   <a
-                    class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium"
+                    class="text-white hover:bg-teal-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium"
                     >Home
                   </a></RouterLink
                 >
@@ -21,7 +22,7 @@
               <div>
                 <RouterLink to="/appoint">
                   <a
-                    class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium"
+                    class="text-white hover:bg-teal-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium"
                     >Uchrashuv
                   </a></RouterLink
                 >
@@ -29,7 +30,7 @@
               <div>
                 <RouterLink to="/doctorlogin"
                   ><a
-                    class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium"
+                    class="text-white hover:bg-teal-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium"
                   >
                     Doctor Login
                   </a></RouterLink
@@ -46,7 +47,7 @@
           </button>
           <button
             type="button"
-            class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+            class="rounded-full bg-teal-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-teal-800"
           >
             <span class="sr-only">View notifications</span>
             <BellIcon class="h-6 w-6" aria-hidden="true" />
@@ -57,7 +58,7 @@
             <div>
               <Button
                 @click="show = !show"
-                class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                class="flex rounded-full bg-teal-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-teal-800"
               >
                 <img
                   class="h-8 w-8 rounded-full"
@@ -85,20 +86,20 @@
                 <div>
                   <a
                     href="#"
-                    class="hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700"
+                    class="hover:bg-gray-200 block px-4 py-2 text-sm text-teal-700"
                   >
                     sizning profel</a
                   >
                 </div>
                 <div>
                   <a
-                    class="hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700"
+                    class="hover:bg-gray-200 block px-4 py-2 text-sm text-teal-700"
                     >Settings</a
                   >
                 </div>
                 <div>
                   <a
-                    class="hover:bg-red-700 hover:text-white block px-4 py-2 text-sm text-gray-700"
+                    class="hover:bg-red-700 hover:text-white block px-4 py-2 text-sm text-teal-700"
                     >Sign out</a
                   >
                 </div>
@@ -113,11 +114,11 @@
     <div class="mx-auto max-w-2xl py-3 sm:py-8 lg:max-w-none lg:py-3">
 
       <div
-        class="border shadow shadow-gray-700 bg-slate-50 rounded-2xl w-auto h-auto bg-"
+        class="border shadow shadow-teal-700 bg-slate-50 rounded-2xl w-auto h-auto bg-"
       >
         <div class="m-4">
           <img src="https://cdn.dayschedule.com/img/solutions/doctor-appointment-booking-calendar-app.png" 
-          class=" h-52 mx-auto w-60 border-b-2 border-gray-800">
+          class=" h-52 mx-auto w-60 border-b-2 border-teal-800">
           <h1 class="mt-6 text-center text-lg">
             Sizda hech qanday uchrashuv yo'q
           </h1>
